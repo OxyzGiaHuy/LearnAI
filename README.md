@@ -1,2 +1,2 @@
 # LearnAI
-HCMUS Student try to master AI
+HCMUS Students try to master AI
