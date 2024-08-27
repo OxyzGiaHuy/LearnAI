@@ -1,0 +1,116 @@
+Intro
+-----------------------------------------------------------------
+3.1 Ví dụ truyền cảm hứng
+
+Khi bạn có thể tạo ra một giải pháp hoạt động được trong mọi tình huống, bạn không nên sử dụng học máy.
+
+1. Xác định một hiệu lệnh đánh thức
+-> Chúng ta định nghĩa một chương trình linh hoạt mà hành vi của nó xác định bởi những tham số
+=> Mô hình
+
+2. Một quá trình huấn luyện điển hình
+Thiết kế một mô hình -> Lấy dữ liệu mới -> Cập nhật mô hình
+						`-> Kiểm tra liệu đã đủ tốt ->`
+						
+-----------------------------------------------------------------
+3.2 Các thành phần chính: Dữ liệu, Mô hình, Thuật toán
+
+-> Dữ liệu mà chúng ta có thể học
+- Thuật ngữ: garbage in, garbage out
+- Học những dữ liệu bất công trong quá khứ
+
+-> Một mô hình về cách biến đổi dữ liệu
+Những mô hình bao gồm rất nhiều phép biến đổi dữ liệu liên tiếp,
+được liên kết với nhau từ trên xuống dưới, và đó cũng là ý nghĩa 
+của cái tên "học sâu"
+
+-> Một hàm mất mát định lượng độ lỗi của mô hình
+Objective function -> Loss func, Cost func
+-> Hàm mục tiêu thay thế Surogate objective
+
+-> Một thuật toán điều chỉnh các tham số của mô hình để giảm thiểu mất mát
+Các thuật toán tối ưu, có khả năng tìm kiếm các tham số khả dĩ tốt nhất để cực tiểu hoá hàm mất mát
+-> Các thuật toán tối ưu phổ bién nhất cho mạng nơ-ron dều theo một hướng tiếp cận là hạ gradient
+
+-----------------------------------------------------------------
+3.3 Các dạng học máy
+
+3.3.1 Học có giám sát
+- Xác suất có điều kiện P(y|X)
+
+Hồi quy
+-> Câu hỏi bao nhiêu(bao lâu, bao xa, v.v.)
+
+Phân loại
+-> Đây có phải là _?
+-> Nhận dạng kí tự quang học (optical character recognition - OCR)
+L1 = sigma(1->n)|yi - y'i|
+L2 = sigma(1->n)(yi - y'i)^2
+- Phân loại phân cấp (hierarchy)
+
+Gán thẻ
+-> Bài toán học để dự đoán các lớp không xung khắc - not mutually exclusive
+- Phân loại đa nhãn
+
+Tìm kiếm và xếp hạng 
+- information retrieval
+-> query-dependent relevance scores
+
+Hệ thống gợi ý
+- phản hồi trực tiếp (explicit feedback) - implicit feedback
+
+Học chuỗi
+- dịch máy (machine translation)
+-> Đòi hỏi mô hình có khả năng nhận chuỗi các đầu vào và dự đoán chuỗi đầu ra
+- seq2seq
+
+Gán thẻ và phân tích cú pháp
+-> Bài toán chú thích cho một chuỗi văn bản
+
+Tự động nhận dạng giọng nói
+-> Thử thách là việc số lượng các khung âm thanh nhiều hơn hẳng so với số lượng từ,
+	nghĩa là không tồn tại một phép ánh xạ 1:1 giữa các khung âm thanh và các từ
+
+Chuyển văn bản thành giọng nói (TTS)
+
+Dịch máy
+
+3.3.2 Học không giám sát
+
+Phân cụm (clustering)
+
+Ước lượng không gian con (subspace estimation) 
+Bài toán phân tích thành phần chính (principal component analysis - PCA)
+
+Học biểu diễn (representation learning)
+
+Nhân quả và mô hình đồ thị xác suất (probabilistic graphical models)
+
+-> Mạng đối sinh (generative adversarial network - GAN),
+	cho ta một quy trình sinh dữ liệu, kể cả những dữ liệu cấu trúc phức tạp như hình ảnh và âm thanh
+
+3.3.3 Tương tác với Môi trường
+- offline learning
+- distribution shift
+-> Chúng ta muốn nghĩ tới những tác nhân (agent) thông minh chứ không chỉ những mô hình dự đoán
+
+3.3.4 Học tăng cường
+- quá trình quyết định Markov (MDP)
+- contextual bandit problem
+- multi-armed bandit problem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
